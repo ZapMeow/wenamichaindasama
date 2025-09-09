@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <button>iniciar sesion</button>
+        <button>Crear cuenta</button>
+    </header>
+    <div class="createAccount">
+        <form action="">
+            <h1>Crear cuenta</h1>
+            <div class="errorStatus">
+                aqui deberia haber un error
+            </div>
+            <div class="row">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="row">
+                <label for="name">Apellido</label>
+                <input type="text" id="surename" required>
+            </div>
+            <div class="row">
+                <label for="name">Fecha nacimiento</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="row">
+                <label for="name">Correo</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="row">
+                <label for="name">Nombre de usuario</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="row">
+                <label for="name">Contraseña</label>
+                <input type="text" id="password" required>
+            </div>
+            <div class="row">
+                <label for="name">Repetir contraseña</label>
+                <input type="text" id="repeatPassword" required>
+            </div>
+            <button onclick="showInfo()">submit</button>
+            <script src="verifySesion.js"></script>
+        </form>
+    </div>
+
+    <div class="session">
+        <form action="">
+            <h1>Iniciar sesion</h1>
+            <div class="errorStatus">
+                Aqui tambien deberia haber un error
+            </div>
+            <div class="row">
+                <label for="name">Nombre de usuario</label>
+                <input type="text" id="usernameSesion">
+            </div>
+            <div class="row">
+                <label for="name">Contraseña</label>
+                <input type="text" id="passwordSesion">
+            </div>
+            <button>submit</button>
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
