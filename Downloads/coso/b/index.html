@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhenHacesTusMomosAqui</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="functions.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/Level-Up.png" alt="" srcset="" width="50px" height="50px">
+            <a href="">Inicio</a>
+            <a href="">Contacto</a>
+            <a href="">Redes sociales</a>
+        </nav>
+        <div class="sesion">
+            <button>Iniciar sesion</button>
+            <button>Registrarse</button>
+        </div>
+    </header>
+
+    <div class="relleno1">
+        <h1>empty div</h1>
+    </div>
+
+    <div class="menu">
+        <div class="navBar">
+            <h1>Filtros catalogo</h1>
+            <div class="filter">
+                <label for="filtrerPrice">Precio maximo de filtro</label>
+                <input type="number" name="filtrerPrice" id="filtrerPrice" placeholder="CLP format ex $999999">
+            </div>
+            <div class="filter">
+                <label for="selectType">Categoria a filtrar</label>
+                <!--<input type="number" name="selectType" id="selectType" placeholder="hola">-->
+                <select name="" id="">
+                    <option value="all">Todos</option>
+                    <option value="tablegame">Juegos de mesa</option>
+                    <option value="accessory">Accesorios</option>
+                    <option value="console">Consolas</option>
+                    <option value="pc">Computadores</option>
+                    <option value="chair">Sillas</option>
+                    <option value="mouse">Mouse</option>
+                    <option value="mousepad">Mousepad</option>
+                    <option value="clothes">Poleras</option>
+                    <option value="plush">Plush</option>
+                </select>
+            </div>
+            <button id="filter" onclick="filter()">Filtrar</button>
+        </div>
+        <div class="products">
+            <div class="product tablegame">
+                <img src="img/catan.png" alt="catan">
+                <h1>Catan</h1>
+                <a href="">Cat inc.</a>
+                <p>$29.990</p>
+                <p>Un clásico juego de estrategia donde los jugadores compiten por colonizar y expandirse en la isla de Catan. Ideal para 3-4 jugadores y perfecto para noches de juego en familia o con amigos.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product tablegame">
+                <img src="img/Carcassonne.webp" alt="Carcassonne">
+                <h1>Carcassonne</h1>
+                <a href="">Cat inc.</a>
+                <p>$24.990</p>
+                <p>Un juego de colocación de fichas donde los jugadores construyen el paisaje alrededor de la fortaleza medieval de Carcassonne. Ideal para 2-5 jugadores y fácil de aprender.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product accessory">
+                <img src="img/xboxcontroller-removebg-preview.png" alt="xboxcontroller">
+                <h1>Controlador Inalámbrico Xbox Series X</h1>
+                <a href="">Cat inc.</a>
+                <p>$59.990</p>
+                <p>Ofrece una experiencia de juego cómoda con botones mapeables y una respuesta táctil mejorada. Compatible con consolas Xbox y PC.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product console">
+                <img src="img/ps5-removebg-preview.png" alt="ps5">
+                <h1>PlayStation 5</h1>
+                <a href="">Cat inc.</a>
+                <p>$549.990</p>
+                <p>La consola de última generación de Sony, que ofrece gráficos impresionantes y tiempos de carga ultrarrápidos para una experiencia de juego inmersiva</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product accessory">
+                <img src="img/hyperxcloud-removebg-preview.png" alt="hyperxcloud">
+                <h1>HyperX Cloud II</h1>
+                <a href="">Cat inc.</a>
+                <p>$79.990</p>
+                <p>Proporcionan un sonido envolvente de calidad con un micrófono desmontable y almohadillas de espuma viscoelástica para mayor comodidad durante largas sesiones de juego.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product pc">
+                <img src="img/asuspc.png" alt="asuspc">
+                <h1>ASUS ROG Strix</h1>
+                <a href="">Cat inc.</a>
+                <p>$1.299.990</p>
+                <p>Un potente equipo diseñado para los gamers más exigentes, equipado con los últimos componentes para ofrecer un rendimiento excepcional en cualquier juego.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product chair">
+                <img src="img/silla-removebg-preview.png" alt="silla">
+                <h1>Secretlab Titan</h1>
+                <a href="">Cat inc.</a>
+                <p>$349.990</p>
+                <p>Diseñada para el máximo confort, esta silla ofrece un soporte ergonómico y personalización ajustable para sesiones de juego prolongadas.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product mouse">
+                <img src="img/mouse-removebg-preview.png" alt="mouse">
+                <h1>Logitech G502 HERO</h1>
+                <a href="">Cat inc.</a>
+                <p>$49.990</p>
+                <p>Con sensor de alta precisión y botones personalizables, este mouse es ideal para gamers que buscan un control preciso y personalización.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product mousepad">
+                <img src="img/mousepad-removebg-preview.png" alt="mousepad">
+                <h1>Razer Goliathus Extended Chroma</h1>
+                <a href="">Cat inc.</a>
+                <p>$29.990</p>
+                <p>Ofrece un área de juego amplia con iluminación RGB personalizable, asegurando una superficie suave y uniforme para el movimiento del mouse.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product clothes">
+                <img src="img/polera-removebg-preview.png" alt="polera">
+                <h1>Polera Gamer Personalizada 'Level-Up'</h1>
+                <a href="">Cat inc.</a>
+                <p>$14.990</p>
+                <p>Una camiseta cómoda y estilizada, con la posibilidad de personalizarla con tu gamer tag o diseño favorito.</p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+            <div class="product plush">
+                <img src="img/jimboplush-removebg-preview.png" alt="jimboplush">
+                <h1>Balatro Jimbo</h1>
+                <a href="">Cat inc.</a>
+                <p>$20.000.000</p>
+                <p></p>
+                <div class="buttons">
+                    <button>Añadir al carrito</button>
+                    <button>⭐</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relleno2">
+        <h1>empty div</h1>
+    </div>
+
+    <div class="relleno3">
+        <h1>empty div</h1>
+    </div>
+        
+    <footer>
+        <div class="socialMedia">
+            <h1>Redes sociales</h1>
+                <a href="https://linkedin.com/"><span class="fa-brands fa-linkedin"></span>Linkedin</a>
+                <a href="https://www.facebook.com/"><span class="fa-brands fa-facebook"></span>Facebook</a>
+                <a href="https://www.jetbrains.com/es-es/idea/download/?section=windows"><span class="fa-sharp fa-solid fa-code"></span>IntellijIDEA</a>
+        </div>
+        <div class="tecnicSupport">
+            <h1>Contacto</h1>
+                <a href="https://wa.me/123456789"><span class="fa-brands fa-whatsapp"></span>Whatsapp</a>
+                <a href="mailto:correoejemplo@gmail.com"><span class="fa-solid fa-envelope"></span>Gmail</a>
+        </div>
+    </footer>
+</body>
+</html>
