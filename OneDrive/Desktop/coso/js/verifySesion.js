@@ -29,14 +29,14 @@ nameInput.addEventListener('keyup', function(){
     if (nameInput.value.length < 3){
         nameConfirmation.innerHTML = "Minimo un largo de 3"
     }else{
-        nameInput.innerHTML = ""
+        nameConfirmation.innerHTML = ""
     }
 })
 surenameInput.addEventListener('keyup', function(){
     if (surenameInput.value.length < 3){
         surenameConfirmation.innerHTML = "Minimo un largo de 3"
     }else{
-        surenameInput.innerHTML = ""
+        surenameConfirmation.innerHTML = ""
     }
 })
 dateInput.addEventListener('change', function(){
