@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     display: flex;
     height: 12vh;
@@ -389,4 +393,30 @@ footer a {
 footer h1 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+.cart{
+    z-index: 100;
+    top: 90vh;
+    right: 3vw;
+    position: fixed;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    transition: .5s;
+}
+
+.cart > button{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    width: 7vw;
+    height: 5vh;
+    transition: .5s;
+}
+
+.cart:hover{
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.cart > button:hover{
+    border: 2px solid rgba(255, 255, 255, 0.6);
 }
